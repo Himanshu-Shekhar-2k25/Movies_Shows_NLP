@@ -4,9 +4,10 @@ import json
 import re
 import nltk
 from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
 import joblib
 
+nltk.download('stopwords')
+from nltk.corpus import stopwords
 temp = stopwords.words('english')
 not_stopword = {"weren't",'shouldn','haven','isn',"wasn't", "won't",'needn', 'doesn','aren', 'nor','won','ain', "aren't", "couldn't",'hadn', 'mustn', "mustn't", 'no', 'not', "hasn't", "needn't", "shouldn't", 'didn', 'couldn', "hadn't","isn't", "don't", 'hasn', "wouldn't", 'wouldn', 'mightn', "haven't", 'weren', "didn't","mightn't", 'wasn', "doesn't"}
     
