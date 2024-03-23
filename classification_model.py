@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, accuracy_score
 
-data = pd.read_csv(r"C:\Users\LENOVO\Desktop\Movie DB with NLP\IMDB Dataset.csv")
+data = pd.read_csv(r"IMDB Dataset.csv")
 
 corpus = []
 for i in range(len(data)):
